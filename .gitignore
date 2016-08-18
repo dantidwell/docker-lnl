@@ -3,4 +3,5 @@ node_modules/
 *.log
 bin/
 obj/
+dotnetapp/
 project.lock.json

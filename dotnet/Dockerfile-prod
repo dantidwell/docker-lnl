@@ -1,0 +1,9 @@
+FROM microsoft/dotnet:1.0.0-core
+
+COPY ./dotnetapp ./dotnetapp
+
+WORKDIR ./dotnetapp
+
+EXPOSE 80
+
+CMD ["dotnet", "dotnet-app.dll"]
