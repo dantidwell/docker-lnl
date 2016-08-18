@@ -1,0 +1,3 @@
+FROM scratch
+ADD bin/native-app /
+ENTRYPOINT ["/native-app"]
