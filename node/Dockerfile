@@ -10,10 +10,9 @@ WORKDIR /usr/src/app
 #install dependencies
 RUN npm install
 
-#expose port 80 when the image is run in a container
-EXPOSE 80
+EXPOSE 80 
 
 #run '$ npm start' on container launch 
-CMD ['npm', 'start']
+CMD ["npm", "start"]
 
 
