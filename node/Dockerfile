@@ -10,6 +10,7 @@ WORKDIR /usr/src/app
 #install dependencies
 RUN npm install
 
+#expose port 80 within the docker engine
 EXPOSE 80 
 
 #run '$ npm start' on container launch 
