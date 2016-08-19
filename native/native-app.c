@@ -23,7 +23,7 @@ int main(int argc, char ** argv) {
   struct sockaddr_in clientAddress;
 
   char clientBuffer[CLIENT_BUFFER_SIZE];
-  char clientMessage[] = "Hello, World\n";
+  char clientMessage[] = "HTTP/1.1 200 OK\r\nHello, World\n";
 
   serverSockHandle = socket(AF_INET, SOCK_STREAM, 0);
   serverAddress.sin_family = AF_INET; 

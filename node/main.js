@@ -5,7 +5,7 @@ var app = express();
 var server = http.createServer(app);
 
 app.get('/hello/world', (req, res) => { 
-  res.send('Hello, world!\n');
+  res.send('Hello, world!\n\t-node.js\n');
 });
 
 var port = process.env.NODE_ENV === 'docker' ? 80 : 3000;

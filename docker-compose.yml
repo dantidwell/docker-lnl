@@ -1,0 +1,24 @@
+version: '2'
+services:
+  nginx: 
+    build: 
+      context: ./nginx
+    ports:
+      - "80:80" 
+    links: 
+      - node-app:node-app
+      - dotnet-app:dotnet-app
+
+  node-app:
+    build:
+      context: ./node
+      dockerfile: ./Dockerfile
+    environment: 
+      - NODE_ENV=${NODE_ENV}
+  
+  dotnet-app:
+    build:
+      context: ./dotnet
+      dockerfile: ./Dockerfile-prod
+    environment: 
+      - DOTNET_ENV=${DOTNET_ENV}

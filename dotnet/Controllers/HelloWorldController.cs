@@ -5,7 +5,7 @@ namespace DockerLnl.Controllers {
     [HttpGet]
     [Route("hello/world/")] 
     public string SayHelloWorld() { 
-      return "Hello, world!\n";
+      return "Hello, world!\n\t-.NET Core\n";
     }
   }
 }
