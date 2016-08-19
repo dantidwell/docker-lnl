@@ -1,3 +1,4 @@
 FROM scratch
 ADD bin/native-app /
+EXPOSE 80
 ENTRYPOINT ["/native-app"]
