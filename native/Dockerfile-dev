@@ -1,6 +1,0 @@
-FROM scratch
-
-COPY ./bin ./native-app
-WORKDIR ./native-app
-
-CMD ["./native-app"]
